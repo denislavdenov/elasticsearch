@@ -1,0 +1,8 @@
+[Unit]
+Description=Starts Logstash log collecting
+
+[Service]
+ExecStart=/usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/logstash_nginx.conf
+
+[Install]
+WantedBy=multi-user.target

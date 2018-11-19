@@ -1,0 +1,9 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+    - /var/log/*.log
+  input_type: log
+  document_type: syslog
+  registry: /var/lib/filebeat/registry
+output.elasticsearch:
+  hosts: ["http://localhost:9200"]

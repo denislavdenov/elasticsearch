@@ -1,0 +1,8 @@
+[Unit]
+Description=Starts Logstash log collecting
+
+[Service]
+ExecStart=/usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/logstash_mysql.conf
+
+[Install]
+WantedBy=multi-user.target
