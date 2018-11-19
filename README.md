@@ -31,9 +31,9 @@ Using them all needed software is installed, some configurations files (stored i
 2. Do `vagrant up` and wait until provisioning is over
 3. System logs from Elastic and Mysql VMs are already created and shiped to Elasticsearch so now you need to create some Nginx
    Nginx server's port is forwared on localhost:8080 so you need to do some connections from your browser.
-   For example:
-   Do 5 `localhost:8080` that will generate 5 reposnse codes 200.
-   Do 2 `localhost:8080/something that will generate 2 response codes 404.
+   For example:      
+   Do 5 `localhost:8080` that will generate 5 reposnse codes 200.    
+   Do 2 `localhost:8080/something` that will generate 2 response codes 404.
 4. Now you can open Kibana located on localhost:5601
    At fist you will be asked to create index patterns based on the indicies that Kibana has received from Elasticsearch
    Below you can see that there is indices for mysql,nginx and the system logs from Filebeat
