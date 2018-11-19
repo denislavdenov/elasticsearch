@@ -39,7 +39,7 @@ Using them all needed software is installed, some configurations files (stored i
    Below you can see that there is indices for mysql,nginx and the system logs from Filebeat
    Index pattern should match part of the name seen below
    
-   <img src="screenshots/graph.png" width="500" height="300" />
+   <img src="screenshots/index.png" width="1000" height="500" />
    
 5. Now you can go to `Visualize` and create some Visualizatons, for example:
    Create a Pie chart to check what is the count of response codes for your Ngninx server.
